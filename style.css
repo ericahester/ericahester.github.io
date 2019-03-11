@@ -2,11 +2,11 @@
 
 @font-face{
 	font-family: quicksandLight;
-	src: url(fonts/Quicksand-Light.otf);
+	src: url(ericahester.github.io/fonts/Quicksand-Light.otf);
 }
 @font-face{
 	font-family: quicksandReg;
-	src: url(fonts/Quicksand-Regular.otf);
+	src: url(ericahester.github.io/fonts/Quicksand-Regular.otf);
 }
 #shell{
 	padding: 10px;
