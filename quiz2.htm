@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz 2</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+      <style media="screen">
+
+      html,body{
+        margin: 0;
+        min-height: 100%;
+        height: 100%
+      }
+
+      div{
+        box-sizing: border-box;
+        float: left;
+      }
+      span{
+        box-sizing: border-box;
+      }
+
+      .header,.footer{
+        background-color: #222222;
+        color: white;
+        width:100%;
+        height: 20%;
+        text-align: center;
+        padding:5%;
+      }
+      .header{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 50px;
+      }
+      .leftColumn{
+        text-align: center;
+        width: 30%;
+        height: 60%;
+        border-right: 2px solid #222222;
+      }
+      .rightColumn{
+        width: 70%;
+        height: 60%;
+      }
+      .insidePadding{
+        padding:5%;
+      }
+      .inputLabel{
+        display:inline-block;
+        width:30%;
+        text-align: right;
+        font-size: 20px;
+        padding:1%;
+        padding-top:3%;
+        padding-bottom:3%;
+      }
+      .inputBox{
+        display:inline-block;
+        width:40%;
+        padding:3%;
+      }
+      .inputBox input{
+        font-size:12px;
+        padding:1%;
+        background-color: #dedede;
+        border:0;
+        border-bottom:1px solid black;
+      }
+      .buttonRow{
+        display:inline-block;
+        width:40%;
+        padding-top:3%;
+        margin-left:39%;
+      }
+      .buttonRow button{
+        font-size: 20px;
+        padding:2%;
+      }
+      .right{
+        color:#0000ff;
+      }
+      .wrong{
+        color:#ff0000;
+      }
+      i{
+        display: block;
+        margin: 10px;
+      }
+      </style>
+        <script src="https://kit.fontawesome.com/11d89c21eb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">Registration Page</div>
+    <div class="leftColumn insidePadding">
+      <i class="fas fa-address-card fa-5x"></i>
+      Please use the form to the right to complete your registration.
+    </div>
+    <div class="rightColumn insidePadding">
+      <div class="form">
+        <span class="inputLabel">email: </span> <span class="inputBox"><input type="email" name="" value=""></span>
+        <span class="inputLabel">password: </span> <span class="inputBox"><input id="pw" type="password" name="" value=""></span>
+        <span class="inputLabel">confirm password: </span> <span class="inputBox"> <input id="pwVerify" type="password" name="" value=""></span>
+        <span class="buttonRow"><button type="button" onclick="compareValues()" name="button">Click to Register</button>
+          <br><br>
+          <p id="showMessage"></p>
+        </span>
+      </div>
+    </div>
+    <div class="footer">
+      &copy; 2019. Tech Comm and Interaction Design. All Rights Reserved.
+    </div>
+    <script type="text/javascript">
+      function compareValues(){
+        var p1 = document.getElementById('pw').value;
+        var p2 = document.getElementById('pwVerify').value;
+
+        //document.getElementById('pw').value = "";
+        //document.getElementById('pwVerify').value = "";
+
+        var myMessage;
+        if(p1==p2){
+            myMessage = "<span class='right'>Your passwords match!</span>";
+          }else{
+            myMessage = "<span class='wrong'>Your passwords don't match. Try again.</span>";
+          }
+          document.getElementById('showMessage').innerHTML = myMessage;
+        }
+    </script>
+  </body>
+</html>
