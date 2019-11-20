@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz 3</title>
+    <style media="screen">
+      button{
+        width: 20%;
+        height: 15%;
+        color: white;
+        font-size: 40px;
+        background-color: red;
+        margin-left: 40%;
+        margin-right: 40%
+      }
+      .myStyle{
+        border: 2px solid red;
+        background-image: url('holiday1.jpg');
+        height: 400px;
+        width: 400px;
+        margin: auto;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="addDiv()">Click Me</button>
+    <h1 id="greetings"></h1>
+  </body>
+  <script>
+    function addDiv(){
+      var newDiv = document.createElement("div");
+      var holidayDiv = document.createAttribute("id");
+      var holidayStyles = document.createAttribute("class");
+
+      holidayStyles.value = "myStyle";
+      newDiv.setAttributeNode(holidayStyles);
+      holidayDiv.value = "holidayID";
+      newDiv.setAttributeNode(holidayDiv);
+
+      document.body.appendChild(newDiv);
+      document.getElementById("holidayID").addEventListener("mouseover", holidayMsg);
+      document.getElementById("holidayID").addEventListener("mouseout", originalImg);
+    }
+
+    function holidayMsg(){
+      document.getElementById("holidayID").style.backgroundImage = "url('holiday2.jpg')";
+      //document.getElementById("greetings").innerHTML = "Happy Holidays!";
+    }
+    function originalImg(){
+      document.getElementById("holidayID").style.backgroundImage = "url('holiday1.jpg')";
+      //document.getElementById("greetings").innerHTML = "";
+    }
+
+
+  </script>
+</html>
