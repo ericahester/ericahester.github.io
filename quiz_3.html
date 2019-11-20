@@ -20,7 +20,11 @@
         width: 400px;
         margin: auto;
       }
-
+    #greetings{
+        margin-left: 40%;
+        color: red;
+        font-family: sans-serif;
+      }
 
     </style>
   </head>
@@ -46,11 +50,11 @@
 
     function holidayMsg(){
       document.getElementById("holidayID").style.backgroundImage = "url('holiday2.jpg')";
-      //document.getElementById("greetings").innerHTML = "Happy Holidays!";
+      document.getElementById("greetings").innerHTML = "Happy Holidays!";
     }
     function originalImg(){
       document.getElementById("holidayID").style.backgroundImage = "url('holiday1.jpg')";
-      //document.getElementById("greetings").innerHTML = "";
+      document.getElementById("greetings").innerHTML = "";
     }
 
 
