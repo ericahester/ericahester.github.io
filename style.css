@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+.header h1{
+  font-size: 85px;
+  font-family: 'Patrick Hand', cursive;
+  color: #fff;
+}
+
+.shell{
+  padding: 2%;
+}
+nav ul{
+	list-style-type: none;
+}
+nav li{
+	display: inline;
+	float: right;
+  padding: 10px;
+}
+nav ul li a{
+	text-decoration: none;
+	font-size: 14px;
+  color: #2E3192;
+	font-family: 'Open Sans', sans-serif;
+  position: fixed;
+}
+
+body{
+  background-color: #0296b0;
+}
+
+.sections h1{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 70px;
+  color: #fff;
+  float: left;
+	width: 1360px;
+	padding: 5px;
+}
+.sections h1 em{
+  color: green;
+}
+.sections p{
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+  display: block;
+	float: left;
+  font-size: 36px;
+	width: 90%;
+	padding: 10px 15px 10px 50px;
+}
+button{
+  background-color: lightpink;
+  font-family: sans-serif;
+  border: none;
+  width: 10%;
+  height: 8%;
+  font-size: 24px;
+  color:darkblue;
+}
+
+#bus{
+  position: absolute;
+}
+
+#busDiv{
+  padding-bottom: 30%;
+  position: relative;
+}
+
+#greencar{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.waterOn {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.turnOff {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  background-image: url('spigotNW.png');
+  background-repeat: no-repeat;
+
+}
+
+.waterOn:hover .turnOff {
+  opacity: 1;
+}
