@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ORO - App Design</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="shell">
+      <div id="top">
+        <div id="nav">
+          <img src="EHicon.png" alt="icon" width="4%">
+          <nav>
+            <ul>
+              <li><a href="index.html"><span class="peachTEXT">work</span></a></li>
+              <li><a href="about.html"><span class="peachTEXT">about</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="content">
+          <div class="first">
+          <img src="begin-affinity2.png" alt="whole">
+          </div>
+          <div class="second">
+            <a href="file:///C:/Users/Homie/Downloads/GDD%20Research%20Report%20(1).pdf">
+            <img src="research report.png" alt="button">
+            </a>
+          </div>
+          <div class="third-model">
+            <img src="modeling.png" alt="model">
+          </div>
+          <div class="personas">
+            <div id= "katie">
+            <a href="file:///C:/Users/Homie/Downloads/Book%20Girl%20Page%20v3.pdf">
+              <img src="katie.png" alt="katie">
+              </a>
+              </div>
+              <div id="cody">
+              <a href="file:///C:/Users/Homie/Downloads/Hoodie%20Boy%20Page%20v3.pdf">
+                <img src="cody.png" alt="cody">
+                </a>
+              </div>
+          </div>
+          <div class="fourth">
+            <img src="context - proto.png" alt="rest">
+          </div>
+          <div class="fifth">
+            <a href="https://www.figma.com/proto/fYpIOF1Wfp7ETO8qD87ugI/GDD-Report?node-id=1291%3A3957&scaling=scale-down">
+            <img src="prototype button.png" alt="button">
+            </a>
+          </div>
+          <div class="last">
+            <img src="end.png" alt="last">
+          </div>
+        </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("nav");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+  </body>
+</html>
